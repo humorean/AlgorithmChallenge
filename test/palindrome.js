@@ -1,13 +1,13 @@
 const assert = require('assert'); //assert is a mocha function
-const reverseString = require('../reverseString/reverseString.js');
+const palindrome = require('../palindrome/palindrome');
 
 
-describe('reverseString', function(){
-  it('The app should return a reversed string', function(){
-    assert.equal(reverseString('helloWorld'), 'dlroWolleh');
+describe('palindrome', function(){
+  it('The result should be true when string is mirrored', function(){
+    assert.equal(palindrome('abbbba'), true);
   });
 
-  it('The app should return a reversed string redrum', function(){
-    assert.equal(reverseString('murder'), 'redrum');
+  it('The result should be false when string is not mirrored', function(){
+    assert.equal(palindrome('abbbbac'), false);
   });
 });
