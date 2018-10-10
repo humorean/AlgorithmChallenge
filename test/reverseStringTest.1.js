@@ -1,8 +1,8 @@
 const assert = require('assert'); //assert is a mocha function
-const reverseString = require('../reverseString/reverseString.js');
+const reverseString = require('../reverseString/reverseString.1.js');
 
 
-describe('reverseString', function(){
+describe('reverseString1', function(){
   it('The app should return a reversed string', function(){
     assert.equal(reverseString('helloWorld'), 'dlroWolleh');
   });
