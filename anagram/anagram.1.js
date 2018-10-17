@@ -1,10 +1,7 @@
 //Tell if a two strings are anagram, ignoring capitals and punctuations
-function anagram(A,B) {
+function anagram1(A,B) {
     const a = cleanStr(A);
-    const b = cleanStr(B);
-
-    console.log(a);
-    console.log(b);
+    const b = cleanStr(B);;
 
     return a==b?true:false;
 }
@@ -14,8 +11,5 @@ function cleanStr(str) {
     return str.replace(/[^\w]/g,'').toLowerCase().split('').sort().join('');
 }
 
-anagram('AAplo', 'plaao'); //true
-anagram('BOX', 'XOBb'); //false
-anagram('BOX', 'XOBp'); //false
 
-module.exports = anagram;
+module.exports = anagram1;

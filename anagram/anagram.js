@@ -3,14 +3,12 @@ function anagram(A,B) {
     const a = charMap(A);
     const b = charMap(B);
 
-    console.log(a);
-    console.log(b);
     // if object size is not equal then return false
     if(Object.keys(a).length !== Object.keys(b).length){
         return false;
     }else{
         for(let p in a){
-            if(b[p] !== b[p]){
+            if(a[p] !== b[p]){
                 return false;
             }
         }
@@ -27,8 +25,5 @@ function charMap(str) {
     return map;
 }
 
-anagram('AAplo', 'plaao'); //true
-anagram('BOX', 'XOBb'); //false
-anagram('BOX', 'XOBp'); //false
 
 module.exports = anagram;
