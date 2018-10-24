@@ -12,11 +12,7 @@ function reverseWords(str){
             onlyWords.push(word);
         }
     }
-
-
-    console.log(onlyWords.reverse().join(' '));
+    return onlyWords.reverse().join(' ');
 };
-
-reverseWords(" I have a big tummy ");
 
 module.exports = reverseWords;
