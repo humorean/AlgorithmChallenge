@@ -7,7 +7,7 @@
 function sentenceCapitalization(str) {
     let capWords =[];
     for (let word of str.split(' ')){
-        let capWord = word[0].toUpperCase()+word.slice(1,word.length);
+        let capWord = word[0].toUpperCase()+word.slice(1);
         capWords.push(capWord);
     }
     console.log(capWords.join(' '));
