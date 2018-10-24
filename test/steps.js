@@ -4,7 +4,7 @@ const stepsRecursive = require('../steps/stepsRecursive');
 
 describe('steps', function(){
     //test case 1: make steps for 3 level: steps(3)
-    it('make steps for 1 level', function(){
+    it('make steps for 3 level', function(){
         let test1 = steps(3);
         assert.equal(test1[0], '#  ');
         assert.equal(test1[1], '## ');
@@ -22,7 +22,7 @@ describe('steps', function(){
     });
 
     //Test for steps.1.js for recursive 
-    it('make steps for 1 level', function(){
+    it('make steps for 3 level', function(){
         let test3 = stepsRecursive(3);
         assert.equal(test3[0], '#  ');
         assert.equal(test3[1], '## ');
